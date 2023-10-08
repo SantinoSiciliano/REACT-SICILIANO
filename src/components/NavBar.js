@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavBar.css'; 
 import logo from '../images/logo.png'; 
-import carritoImg from '../images/carrito.png'; 
+import CartWidget from './CartWidget/CartWidget'; 
 
 function NavBar() {
   return (
@@ -17,9 +17,7 @@ function NavBar() {
           <li className="nav-list"><a href="/zapatillas">Zapatillas</a></li>
         </ul>
       </div>
-      <div>
-        <a href="/carrito"><img src={carritoImg} alt="Carrito" className="carrito-image"/></a>
-      </div>
+      <CartWidget/>
     </nav>
   );
 }
