@@ -1,0 +1,48 @@
+.CardItem {
+    border: 1px solid #ddd;
+  padding: 10px;
+  width: calc(33.33% - 20px); /* Ancho del elemento (ajusta según tus necesidades) */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .ItemHeader {
+    display: flex; /* Usa Flexbox para alinear los elementos horizontalmente */
+    justify-content: space-between; /* Espacio igual entre los elementos */
+    max-width: 1000px; /* Establece el ancho máximo para evitar que los elementos se extiendan demasiado */
+    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+    background-color: #f80d0d;
+    color: white;
+    padding: 5px;
+    margin: 0;
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  .ItemImg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    align-self: center; /* Centra la imagen horizontalmente */
+  }
+  
+  .ItemInfo {
+    margin: 10px 0;
+  }
+  
+  .ItemFooter {
+    text-align: right;
+    align-self: center; /* Centra el botón horizontalmente */
+  }
+  
+  .Option {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .Option:hover {
+    background-color: #555;
+  }

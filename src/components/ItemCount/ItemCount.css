@@ -1,0 +1,15 @@
+.Button {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto en blanco */
+    padding: 10px 20px; /* Ajusta el espaciado según tus preferencias */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  /* Estilo para el botón deshabilitado */
+  .Button:disabled {
+    background-color: #888; /* Color de fondo gris para botón deshabilitado */
+    color: #ccc; /* Texto gris para botón deshabilitado */
+    cursor: not-allowed; /* Cambia el cursor a 'no permitido' cuando está deshabilitado */
+  }
