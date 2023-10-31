@@ -1,0 +1,20 @@
+.ItemDetailContainer{
+    width: 60%; /* Ajusta el ancho según tus necesidades */
+  height: 80vh; /* Ajusta la altura según tus necesidades */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Controls{
+    display: flex;
+    justify-content:space-around;
+}
+
+.CardItem {
+    border: 1px solid #ddd;
+  padding: 10px;
+  width: calc(33.33% - 20px); /* Ancho del elemento (ajusta según tus necesidades) */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+

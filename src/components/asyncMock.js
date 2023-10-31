@@ -8,8 +8,8 @@ const products = [
         stock:25,
         description:'descripcion de jordan 3'
     },
-    {id:'2', name: 'jordan 4', price: 800, category:'zapatilla', img:"https://drops-ba.com/wp-content/uploads/2023/06/Jordan-4-Retro-SB-Pine-Green.jpg", stock: 25, descripcion:'descripcion de jordan 4'},
-    {id:'3', name: 'jordan 1', price: 1200, category:'zapatilla', img:"https://drops-ba.com/wp-content/uploads/2023/06/Jordan-1-Retro-AJKO-Chicago-2021.jpg", stock: 25, descripcion:'descripcion de jordan 1'}
+    {id:'2', name: 'remera stussy', price: 800, category:'remeras', img:"https://drops-ba.com/wp-content/uploads/2023/10/Stussy-Soda-Can-Tee-White-Red.jpg", stock: 25, description:'descripcion de remera stussy'},
+    {id:'3', name: 'buzo supreme', price: 1200, category:'buzos', img:"https://drops-ba.com/wp-content/uploads/2023/10/Supreme-Cities-Arc-Crewneck-Cardinal.jpg", stock: 25, description:'descripcion de buzo supreme'}
 ]
 
 export const getProducts = () => {
@@ -19,3 +19,21 @@ export const getProducts = () => {
         }, 500)
     })
 }
+
+export const getProductById = (productId) => {
+    return new Promise ((resolve) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === productId))
+        }, 500)
+    })
+}
+
+export const getProductsByCategory = (category) => {
+    const filteredProducts = products.filter((product) => product.category === category);
+
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(filteredProducts);
+      }, 500);
+    });
+};
