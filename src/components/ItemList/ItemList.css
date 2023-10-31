@@ -1,6 +1,6 @@
 .ListGroup{
-    display: flex; /* Usa Flexbox para alinear los elementos horizontalmente */
-  justify-content: space-between; /* Espacio igual entre los elementos */
-  max-width: 1000px; /* Establece el ancho máximo para evitar que los elementos se extiendan demasiado */
-  margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
