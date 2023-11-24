@@ -1,6 +1,6 @@
 .ItemDetailContainer{
     width: 100%; /* Ajusta el ancho según tus necesidades */
-  height: 80vh; /* Ajusta la altura según tus necesidades */
+  height: 100vh; /* Ajusta la altura según tus necesidades */
   display: flex;
   align-items: center;
   justify-content: center;
