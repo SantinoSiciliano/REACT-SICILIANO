@@ -47,7 +47,7 @@ export const createProdcut = async (prodcut) => {
     return result
 }
 
-export const createOrder = async (data) => {
-    const { id } = await addDoc(orderRef, data)
-    return id
+export const createOrder = async (orderData) => {
+    const { id } = await addDoc(orderRef, orderData);
+    return id;
 }
